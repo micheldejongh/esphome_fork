@@ -1,0 +1,20 @@
+i2c:
+  - id: i2c_m5module_2relay
+    scl: ${scl_pin}
+    sda: ${sda_pin}
+
+m5module_2relay:
+  id: M5modulerelay_ID1
+
+switch:
+  - platform: m5module_2relay
+    id: m5module_2relay_1
+    name: m5module_2relay1
+    channel: 1
+    m5module_2relay_id: M5modulerelay_ID1
+
+  - platform: m5module_2relay
+    id: m5module_2relay_2
+    name: m5module_2relay2
+    channel: 2
+    m5module_2relay_id: M5modulerelay_ID1
