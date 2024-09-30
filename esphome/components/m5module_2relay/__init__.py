@@ -11,7 +11,7 @@ MULTI_CONF = True
 CONF_M5MODULE_2RELAY_ID = "m5module_2relay_id"
 
 m5module_2relay_ns = cg.esphome_ns.namespace("m5module_2relay")
-M5SModule_2Relay = m5module_2relay_ns.class_("M5Module2Relay", cg.Component, i2c.I2CDevice)
+M5Module_2Relay = m5module_2relay_ns.class_("M5Module2Relay", cg.Component, i2c.I2CDevice)
 
 CONFIG_SCHEMA = (
     cv.Schema(
